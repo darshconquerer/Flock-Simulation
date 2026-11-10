@@ -116,8 +116,3 @@ if __name__ == "__main__":
     frame_count = 100
     for _ in range(frame_count):
         flock.update()
-    milliseconds_per_update = (time.perf_counter() - start_time) / frame_count *1000
-    print(
-        f"{flock.boid_count} boids: {milliseconds_per_update:.2f} ms/update "
-        f"(~{1000 / milliseconds_per_update:.0f} updates/sec)"
-    )
