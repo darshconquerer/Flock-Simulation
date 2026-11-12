@@ -110,7 +110,7 @@ class Flock:
 if __name__ == "__main__":
     import time
 
-    flock = Flock(500, 1280, 720, seed=1)
+    flock = Flock(500, 1280, 720)
     flock.update()
     start_time = time.perf_counter()
     frame_count = 100
